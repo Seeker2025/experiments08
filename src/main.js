@@ -1,4 +1,5 @@
 console.log('Hello World');
+//////Promise, Date
 
 // const ourPromise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
