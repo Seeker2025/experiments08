@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(79, 128, 156);
-    padding: 150px;
+    background-color: rgb(74, 123, 151);
+    padding: 70px;
 }
 .container_for_rotate{
     width: 250px;
@@ -31,4 +31,35 @@ position: absolute;
     transform: rotate(0deg);
     transform-origin: 0% 50% 0; /* x y z */
     
+}
+
+
+.clock__box07{
+    
+    display: none;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000000;
+}
+.clock__box07 span{
+    cursor: pointer;
+}
+
+.clock__cuntainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.clock__calendar{
+    padding-left: 150px;
+}
+
+.clock{
+width: 550px;
+height: 550px;
+border: 8px solid #000000;
+background-image: url('../img/clc.png');
+background-position: -3px 0px;
+background-size: cover;
+border-radius: 50%;
 }
