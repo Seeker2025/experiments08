@@ -35,14 +35,19 @@ position: absolute;
 
 
 .clock__box07{
-    
+    margin: 20px 0;
     display: none;
     width: 300px;
     height: 300px;
-    border: 1px solid #000000;
+    border: 1px solid #fcfafa;
+    background-color: rgb(54, 90, 137);
 }
 .clock__box07 span{
     cursor: pointer;
+}
+.clock__box07 p{
+    cursor: pointer;
+    font-size: 1.3em;
 }
 
 .clock__cuntainer{
@@ -51,15 +56,107 @@ position: absolute;
     justify-content: flex-start;
 }
 .clock__calendar{
-    padding-left: 150px;
+    margin: 37px 0;
 }
 
+
+
+section.section{
+    width: 23%;
+    /* border: 2px dashed red; */
+}
+
+.date-style{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4em;
+}
+.bold{
+    font-weight: bold;
+    color: #bedbfa;
+}
+
+/* arrow */
+
 .clock{
-width: 550px;
-height: 550px;
-border: 8px solid #000000;
-background-image: url('../img/clc.png');
-background-position: -3px 0px;
-background-size: cover;
-border-radius: 50%;
+    width: 550px;
+    height: 550px;
+    border: 7px solid #faf9f9;
+    background-image: url('../img/clc02.png');
+    background-position: -1px 0px;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    }
+
+.clock-arrow{
+    position: absolute;
+    background-color: rgb(253, 253, 253);
+    transform-origin: bottom;
+    transform: translateX(-50%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.clock-center{
+    position: absolute;
+    background-color: #010101;
+    border: 8px solid #faf9f9;
+    top: 259px;
+    left: 261px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    z-index: 200;
+}
+.clock-seconds__arrow{
+    bottom: 50%;
+    left: 50%;
+    width: 5px;
+    height: 40%;
+    background-color: red;
+    z-index: 100;
+}
+.clock-minutes__arrow{
+    bottom: 50%;
+    left: 50%;
+    width: 8px;
+    height: 33%;
+}
+.clock-hours__arrow{
+    bottom: 50%;
+    left: 50%;
+    width: 12px;
+    height: 24%;
+}
+.clock-seconds__arrow_small{
+    bottom: 29%;
+    left: 50%;
+    width: 5px;
+    height: 50px;
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    transform-origin: bottom;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    z-index: 100;
+    
+}
+.clock-center_small{
+    position: absolute;
+    background-color: #050505;
+    border: 5px solid #fefefe;
+    top: 382px;
+    left: 268px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    z-index: 200;
+}
+
+.box_disappear{
+    visibility: visible;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #fefefe;
+    
 }

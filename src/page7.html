@@ -6,60 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 7 Clock</title>
     <link rel="stylesheet" href="./css/styles.css" />
-   
   </head>
+
   <body>
     <a href="./index.html" class="btn">Back</a>
-    <h2>Page 7 Clock</h2>
+    <h1>Page 07 Clock. Calendar</h1>
+
     <div class="clock__cuntainer">
 
-    <div class="clock__box07 js-clock__box07">
-      <h2>Реклама:</h2>
-      <p>Реклама зникне через <span class="js-timer"></span></p>
-      <!-- <p>&#10060;</p> -->
-    </div>
+    <section class="section"> 
+      <p class="box_disappear">Через 3 секунди з'явиться бокс</p>
+          <div class="clock__box07 js-clock__box07">
+            
+            <h2>Реклама:</h2>
+            <p>Реклама зникне через <span class="bold js-timer"></span></p>
+            <!-- <p>&#10060;</p> -->
+          </div>
+    </section>
 
+    <section class="section">
     <div class="clock__calendar">
-      <div class="date-style">
-        День тижня:
-        <div class="date-day">0</div>
+          <div class="date-style">
+            День тижня:&nbsp;
+            <div class="bold date-day">0</div>
+          </div>
+
+          <div class="date-style">
+            День місяця:&nbsp;
+            <div class="bold date">0</div>
+          </div>
+
+          <div class="date-style">
+            Місяць:&nbsp;
+            <div class="bold date-month">0</div>
+          </div>
+
+          <div class="date-style">
+            Рік:&nbsp;
+            <div class="bold date-year">0</div>
+          </div>
+
+          <div class="date-style">
+            Секунди:&nbsp;    
+            <div class="bold date-sec">0</div>
+          </div>
+
       </div>
 
       <div class="date-style">
-        День місяця:
-        <div class="date">0</div>
+            Поточний час:&nbsp;
+        <div class="bold digital-clock">0</div>
       </div>
+          
+    </section>
 
-      <div class="date-style">
-        Місяць:
-        <div class="date-month">0</div>
-      </div>
-
-      <div class="date-style">
-        Рік:
-        <div class="date-year">0</div>
-      </div>
-
-      <div class="date-style">
-        Секунди:
-        <div class="date-sec">0</div>
-      </div>
-
-      </div>
-
-    <div class="digital-clock">0</div>
-
-
-
-
-
-    <div class="clock">
-      <div class="clock-arrow clock-seconds__arrow"></div>
-      <div class="clock-arrow clock-minutes__arrow"></div>
-      <div class="clock-arrow clock-hours__arrow"></div>
-      <div class="clock-center"></div>
-    </div>
-
+    <section class="section">
+        <div class="clock">
+          <div class="clock-arrow clock-seconds__arrow"></div>
+          <div class="clock-arrow clock-minutes__arrow"></div>
+          <div class="clock-arrow clock-hours__arrow"></div>
+          <div class="clock-center"></div>
+          <div class="clock-seconds__arrow_small"></div>
+          <div class="clock-center_small"></div>
+        </div>
+    </section>
     <!-- <div class="container_for_rotate">
          <div class="center"></div>
          <div class="box_for_rotate"></div>
