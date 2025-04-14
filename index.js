@@ -1,2 +1,2 @@
-import"./assets/styles-CZOxVow9.js";console.log("Hello World");
+import"./assets/styles-C3UYOHnY.js";console.log("Hello World");
 //# sourceMappingURL=index.js.map
