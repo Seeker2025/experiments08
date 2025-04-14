@@ -2,36 +2,7 @@ body{
     background-color: rgb(74, 123, 151);
     padding: 70px;
 }
-.container_for_rotate{
-    width: 250px;
-    height: 250px;
-    background-color: green;
-    position: relative;
-    border-radius: 50%;
-    border: 1px solid rgb(255, 255, 255);
-    
-}
-.center{
-position: absolute;
-    top: 45%;
-    left: 45%; ;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
-}
 
-.box_for_rotate{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 110px;
-    height: 12px;
-    background-color: blue;
-    transform: rotate(0deg);
-    transform-origin: 0% 50% 0; /* x y z */
-    
-}
 
 
 .clock__box07{
@@ -57,6 +28,7 @@ position: absolute;
 }
 .clock__calendar{
     margin: 37px 0;
+   
 }
 
 
