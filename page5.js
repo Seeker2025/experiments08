@@ -1,2 +1,0 @@
-import"./assets/styles-C3UYOHnY.js";class i{constructor({name:n,email:e,funTree:s}){this.name=n,this.email=e,this.funTree=s,this.init()}init(){console.log("init")}}new i({name:"Mango",email:"mango@mail.com",funTree(){console.log("Whoa!")}});class a{constructor({name:n,odd:e,fun:s}){this.name=n,this.odd=e,this.fun=s}}const o=new a({name:"Ivan",odd:27,fun(){console.log("Hello!")}});console.log(o.name);console.log(o.odd);o.fun();o.odd=30;console.log(o.odd);
-//# sourceMappingURL=page5.js.map
