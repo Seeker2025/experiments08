@@ -17,3 +17,7 @@ div.item:not(:first-child){
     /* border: 4px solid #f44545; */
     margin: 10px 0 0 10px;
 }
+.start{
+    padding: 10px 15px;
+    border-radius: 4px;
+}
