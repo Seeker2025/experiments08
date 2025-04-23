@@ -17,7 +17,6 @@ function onClickFun(){
             // console.log(smile);
             box.textContent = smile;
             arr.push('1');
-           
         })
         .catch((smile)=>{
             // console.log(smile);
@@ -28,12 +27,16 @@ function onClickFun(){
                 if(idx === cont.children.length - 1 ){
                     // alert('This is winner!')
                     console.log(cont.children.length);
+                    if(!arr.length || arr.length === 3){
+                        alert('This is winner!');
+                    }
+                    else{
+                        alert('We lost money!')
+                    }
                 }
             }, 500);
-           
-        })
+          })
     })
-
 }
 
 function creationProm(num){
