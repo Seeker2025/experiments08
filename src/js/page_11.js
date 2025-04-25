@@ -1,4 +1,5 @@
 console.log(11);
+//////Promise, Promise.allSettled(arr)
 
 let a = null;
 function toInterval(){
@@ -15,7 +16,7 @@ function toInterval(){
     }, 500);
 }
 
-toInterval();
+// toInterval();
 // setInterval(()=>{
 //     console.log(num);
 // }, 100)
@@ -23,4 +24,81 @@ toInterval();
 new Promise(()=>{
     
 })
+
+setTimeout(()=>{}, 100);
+new Promise((resp, rejt)=>{});
+
+let num01 = Math.random();
+console.log(num01);
+const p1 = new Promise((res, rej)=>{
+    if(num01 < .3) res('p1 Hi!');
+    else rej('p1 No');
+})
+// .then((res)=>console.log(res))
+// .catch((rej)=>console.log(rej))
+
+const p2 = new Promise((res, rej)=>{
+    if(num01 > .4 || num01 < .7) res('p2 Hi!');
+    else rej('p2 No');
+})
+// .then((res)=>console.log(res))
+// .catch((rej)=>console.log(rej))
+
+const p3 = new Promise((res, rej)=>{
+    if(num01 > .7) res('p3 Hi!');
+    else rej('p3 No');
+})
+// .then((res)=>console.log(res))
+// .catch((rej)=>console.log(rej))
+
+let arr = [p1, p2, p3];
+// console.log(arr);
+Promise.allSettled(arr)
+// .then(vallue =>console.log(vallue));
+
+
+
+
+
+
+setInterval(()=>{
+    // console.log('a');
+}, 100)
+
+
+
+
+
+
+
+let numSix = Math.random();
+console.log(numSix);
+
+const p4 = new Promise((resp, redj)=>{
+    if(numSix < .3) resp('p4 Yes!');
+    else redj('p4 NoNo')
+})
+// .then((resp)=> console.log(resp))
+// .catch((redj)=> console.log(redj))
+
+const p5 = new Promise((resp, redj)=>{
+    if(numSix > .3 || numSix < .7) resp('p5 Yes!');
+    else redj('p5 NoNo')
+})
+// .then((resp)=> console.log(resp))
+// .catch((redj)=> console.log(redj))
+
+const p6 = new Promise((resp, redj)=>{
+    if(numSix > .7) resp('p6 Yes!');
+    else redj('p6 NoNo')
+})
+// .then((resp)=> console.log(resp))
+// .catch((redj)=> console.log(redj))
+
+Promise.allSettled([p4, p5, p6]).then(value => console.log(value));
+
+
+
+
+
 
