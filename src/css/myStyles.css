@@ -64,7 +64,8 @@ main {
 /* Races */
 main.main_p6{
     background-color: rgb(165, 126, 42);
-    width: 300px;
+    width: 350px;
+    border: 2px solid rgb(255, 128, 0);
 }
 button.start-race{
     padding: 10px 15px;
